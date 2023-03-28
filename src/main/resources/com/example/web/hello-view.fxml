@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.3762541806020067" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.web.HelloController">
+    <items>
+        <VBox alignment="TOP_CENTER" maxWidth="300.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+            <children>
+                <Label text="Options" textFill="#4d4d4d">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="addHeading" promptText="Heading Text" />
+                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#heading" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #00000033;" text="Heading">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <TextField fx:id="addButton" promptText="Button Text" />
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="137.0" mnemonicParsing="false" onAction="#button" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #00000033;" text="Button">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <TextArea fx:id="addParagraph" prefHeight="52.0" prefWidth="222.0" promptText="Paragraph Text" />
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="67.0" mnemonicParsing="false" onAction="#paragraph" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #00000033;" text="Paragraph">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#picture" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #00000033;" text="Image">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#navigation" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #00000033;" text="Navigation">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="207.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #00000033;" text="Exit">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+            </children>
+            <padding>
+                <Insets top="30.0" />
+            </padding>
+        </VBox>
+        <VBox fx:id="website" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+            <padding>
+                <Insets top="30.0" />
+            </padding></VBox>
+    </items>
+</SplitPane>
